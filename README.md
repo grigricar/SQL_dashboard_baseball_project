@@ -1,10 +1,10 @@
-<h1>Application of Times Series (in Python)</h1>
+<h1>SQL Foundational Football Project</h1>
 
 
 
 <p align="center">
   <br/>
-<img src="https://github.com/grigricar/time_series_project/blob/main/wheat_price_forecast.png" height="60%" width="60%"/>
+<img src="" height="60%" width="60%"/>
 <br />
 </p>
 
