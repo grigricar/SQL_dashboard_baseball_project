@@ -1,0 +1,74 @@
+decade,school,num_players,school_rank
+2010,"University of Miami",14,1
+2010,"California State University Long Beach",13,2
+2010,"Arizona State University",13,2
+2010,"University of Arizona",11,3
+2010,"University of North Carolina at Chapel Hill",11,3
+2000,"Stanford University",26,1
+2000,"California State University Fullerton",24,2
+2000,"University of Southern California",22,3
+2000,"Louisiana State University",22,3
+1990,"Stanford University",26,1
+1990,"Louisiana State University",25,2
+1990,"Florida State University",22,3
+1980,"Arizona State University",34,1
+1980,"University of Texas at Austin",26,2
+1980,"University of Arizona",19,3
+1970,"Arizona State University",33,1
+1970,"University of Southern California",20,2
+1970,"Stanford University",15,3
+1960,"University of Southern California",17,1
+1960,"Michigan State University",10,2
+1960,"University of Michigan",9,3
+1960,"Santa Clara University",9,3
+1950,"University of Southern California",8,1
+1950,"University of Alabama",6,2
+1950,"Washington State University",5,3
+1950,"University of Wisconsin at Madison",5,3
+1950,"University of Texas at Austin",5,3
+1950,"University of Southern Mississippi",5,3
+1950,"Michigan State University",5,3
+1950,"Illinois Wesleyan University",5,3
+1950,"Duke University",5,3
+1940,"Duke University",13,1
+1940,"University of Illinois at Urbana-Champaign",10,2
+1940,"Villanova University",8,3
+1940,"University of Texas at Austin",8,3
+1930,"College of the Holy Cross",15,1
+1930,"University of Texas at Austin",15,1
+1930,"University of Alabama",13,2
+1930,"Fordham University",9,3
+1920,"University of Alabama",13,1
+1920,"College of the Holy Cross",13,1
+1920,"University of Michigan",10,2
+1920,"University of Illinois at Urbana-Champaign",9,3
+1920,"The Ohio State University",9,3
+1910,"University of Notre Dame",15,1
+1910,"St. Mary's College of California",13,2
+1910,"College of the Holy Cross",11,3
+1900,"Georgetown University",14,1
+1900,"College of the Holy Cross",13,2
+1900,"Manhattan College",11,3
+1900,"Brown University",11,3
+1890,"College of the Holy Cross",11,1
+1890,"University of Pennsylvania",9,2
+1890,"Brown University",6,3
+1880,"Brown University",6,1
+1880,"Yale University",6,1
+1880,"University of Michigan",3,2
+1880,"Union College",2,3
+1880,"Pennsylvania State University",2,3
+1880,"Cornell University",2,3
+1880,"Case Western Reserve University",2,3
+1880,"Princeton University",2,3
+1880,"St. Mary's College of California",2,3
+1880,"University of Rochester",2,3
+1870,"Fordham University",2,1
+1870,"Yale University",1,2
+1870,"Washington and Lee University",1,2
+1870,"Villanova University",1,2
+1870,"University of Michigan",1,2
+1870,"Seton Hall University",1,2
+1870,"Harvard University",1,2
+1870,"Dartmouth College",1,2
+1860,"Fordham University",1,1

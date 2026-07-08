@@ -1,5 +1,7 @@
 -- PART I: SCHOOL ANALYSIS
 -- 1. View the schools and school details tables
+USE maven_advanced_sql;
+
 SELECT * FROM schools;
 SELECT * FROM school_details;
 
@@ -9,7 +11,7 @@ FROM 	schools s LEFT JOIN school_details sd
 		ON s.schoolID = sd.schoolID
 ORDER BY s.yearID;
 
-WITH de AS (SELECT  FLOOR(s.yearID/10) AS decade, sd.name_full AS school
+WITH de AS (SELECT  FLOOR(s.yearID/10)*10 AS decade, sd.name_full AS school
 				FROM 	schools s LEFT JOIN school_details sd
 				ON s.schoolID = sd.schoolID
 				ORDER BY s.yearID)
@@ -39,8 +41,9 @@ FROM plyr_count
 ORDER BY num_players DESC
 LIMIT 5;
 
+
 -- 4. For each decade, what were the names of the top 3 schools that produced the most players?
-WITH plyr_count AS (SELECT  ROUND(s.yearID/10) AS decade, sd.name_full AS school, s.playerID AS player
+WITH plyr_count AS (SELECT  ROUND(s.yearID/10)*10 AS decade, sd.name_full AS school, s.playerID AS player
 					FROM 	schools s LEFT JOIN school_details sd
 					ON s.schoolID = sd.schoolID
 				    ORDER BY decade),
@@ -81,14 +84,15 @@ WHERE percentile = 1;
 
 
 -- 3. For each team, show the cumulative sum of spending over the years
-WITH sal_yr AS (SELECT teamID, yearID, SUM(salary) AS annual_spend						-- NOTE: BY grouping by year teamID AND yearID, I can then average over years in the next GROUP BY 
+WITH sal_yr AS (SELECT teamID, yearID, SUM(salary) AS annual_spend						-- NOTE: BY grouping by year teamID AND yearID, I can then SUM over years in the next GROUP BY 
 				FROM salaries
 				GROUP BY teamID, yearID
-				ORDER BY teamID, yearID)
+				ORDER BY  yearID)
 
-SELECT teamID, yearID, annual_spend,
-		SUM(annual_spend) OVER(PARTITION BY teamID ORDER BY yearID DESC) AS cumulative_spend
-FROM sal_yr;
+SELECT teamID, yearID, ROUND(annual_spend/1000000, 2) AS yr_spend_mil,
+		ROUND((SUM(annual_spend) OVER(PARTITION BY teamID ORDER BY yearID))/1000000, 2) AS cumulative_spend_mil
+FROM sal_yr
+ORDER BY teamID, yearID;
 
 -- 4. Return the first year that each team's cumulative spending surpassed 1 billion
 WITH sal_yr AS (SELECT teamID, yearID, SUM(salary) AS annual_spend						 
@@ -132,6 +136,7 @@ FROM date_convert
 ORDER BY career_length DESC;
 
 SELECT * FROM career;
+
 -- 3. What team did each player play on for their starting and ending years?
 CREATE TEMPORARY TABLE temp AS 
 
@@ -221,3 +226,5 @@ SELECT decade , (avg_W - prior_W) AS decade_diff_W, (avg_H - prior_H) AS decade_
 FROM priors;              
 
 -- Interesting to see the drop on avg weight from 1900s to 1910s. WW2 + Depression? AVG difference increased in weight since 90s is striking. 
+
+
