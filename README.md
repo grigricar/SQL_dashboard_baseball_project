@@ -1,6 +1,6 @@
 <h1>SQL Foundational Major League Baseball Project</h1>
 
-
+<a href="https://datastudio.google.com/reporting/3f91010e-93d3-42f2-8d5d-f9aec0d34822">CLICK TO INTERACT WITH THE FULL PROJECT DASHBOARD</a>
 
 <p align="center">
   <br/>
@@ -10,28 +10,35 @@
 
 <h2>Project Description</h2>
 <p>
-This initially began as a crossover exercise, where one of my stats courses used SPSS as the main main statistical programme. I slowly adapted many of the techniques and workflows and learnt how to apply them in python. Although occasionally a hit and miss, LLM use helped enormously to speed up my learning curve here. Eventually, I was able to adapt a full part of an assignment given by the Open University and build on and add to the statistical methods taught to Python. 
+I had encountered bits of SQL in database theory and some short courses, but I felt I needed a better overview. Moreover, in the age of AI, I knew I needed the foundational logic and structural thinking that working with SQL gives. Alice Zhao’s course, “Advanced SQL Querying Techniques” (through Maven on Udemy), was the perfect foundation for this and the origin point for this project.
 
-The idea grew and scale as various options offered by the Python libraries became to tempting not to full explore, and, indeed, speed up some of the statistical work with easily attained diagnostic plots and my personal best find in the "pmdarima" library, which offered a more robust statistical method for developing ARIMA models compared to theorising the best models by finding multiple patterns in ACFs and PACFs. Needless to say so of the traditional methods were employed, which took some work in overlaying graphs. Huge learning experience, and there is still so much to explore in the realm of timeseries modeling. 
+The course was fast-paced with plenty of practical problem exposure which is just what I required to fully grasp those sneaky GROUP BY interactions with categorical and numerical observations. CTEs are now my go-to, WINDOW functions are second nature and the logic of aggregation and pivoting are mine. 
+
+So the origin point of this project was, indeed, the final course project of the course. I completed every section without AI or regular glimpse-at-solution assistance. Comparing my answers I had arrived at the correct solutions, but often through different means. SQL is more of a flexible language than I originally expected. 
+
+I then extended this initial foundation into a full-blown dashboard project. Before I knew it I had to go back to SQL to develop some of my own queries in answer to some of my new questions. I used Google’s Datastudio (formally “Looker”) as an easy introduction to dashboarding. Switching back and forth between mySQL and Datastudio, I learnt much about the important of the initial stage of data structuring, cleaning and organising  and how essential this is to unlocking insights from a large dataset and then communicating findings. 
+
+As usual the project morphed into something bigger than initially expected, where the difficulty lay in placing practical limits on the scope of the project. Next time I will get stuck into a dataset I really care about.    
 </p>
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>Python</b> 
-- <b>Jupyter Notebooks (Python kernels)</b>
-- <b>Adapted to VScode IDE, using uv to setup the project environment</b>
-- <b>Libraries used: pandas, numpy, matplotlib, statsmodels, pmdarima</b>
-- <b>GitHub </b>
+- <b>SQL (MySQL) – Database querying and script development.</b>
+- <b>MySQL Workbench – Local database administration and query design.</b>
+- <b>Datastudio - Business Intelligence (BI) modeling and interactive dashboard engineering.</b>
+- <b>Git & GitHub – Source control, version history management, and portfolio deployment.</b>
+- <b>Command line prompting</b>
 - <b>Basic HTML </b>
 
 <h2> Skills </h2>
 
-- <b>Python</b> 
-- <b>Time Series, modeling choices</b>
-- <b>Statistical reasoning</b>
-- <b>Data Transformation</b>
-- <b>Data Visualization</b> 
-- <b>Data communication and contextualisation</b>
+- <b>SQL basics: Big 6 structure, order of execution</b>
+- <b>Advanced SQL Querying – Implementing Common Table Expressions (CTEs), Window Functions (DENSE_RANK), and schema-based filtering.</b> 
+- <b>Data Transformation & Engineering – Reshaping complex datasets (long-to-wide formatting), execution optimization using Temporary Tables, managing matrix-staggered records, and handling null anomalies.</b>
+- <b>Data pipeline integration – Bridging the gap between a relational SQL engine and external BI visual layers.</b>
+- <b>Analytical Dashboard Design – Engineering user-centric controls (dynamic metric filtering, sliding timelines, discrete coordinate axes).</b>
+- <b>Data Storytelling & Contextualization – Turning fragmented historical sports statistics into structured, chronological narratives with executive headlines.</b> 
+
 
 
 <h2>Key Findings and Analysis</h2>
