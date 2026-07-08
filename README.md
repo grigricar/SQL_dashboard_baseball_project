@@ -1,4 +1,4 @@
-<h1>SQL Foundational Football Project</h1>
+<h1>SQL Foundational Major League Baseball Project</h1>
 
 
 
