@@ -4,7 +4,7 @@
 
 <p align="center">
   <br/>
-<img src="" height="60%" width="60%"/>
+<img src="https://github.com/grigricar/SQL_dashboard_baseball_project/blob/main/images_screenshots/Gemini_Generated_Image_7fjwco7fjwco7fjw.png" height="60%" width="60%"/>
 <br />
 </p>
 
