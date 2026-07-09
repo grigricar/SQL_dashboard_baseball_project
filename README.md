@@ -84,7 +84,7 @@ I thought I had mastered GROUP BY, but ran into a few hurdles that are now resol
 I cannot get enough of CTEs and WINDOW functions, and I enjoyed the logic I used to find the first year that a team’s cumulative spending supposed 1 billion dollars. In reflection and comparison to the SOLUTION, I can avoid too many CTEs by using some double-subjoins in future. This can become less clear to follow, however. 
 
 <p align = "center"> 
-<img src="https://github.com/grigricar/SQL_dashboard_baseball_project/blob/main/images_screenshots/%231%20reflection_image.png" height="80%"  width="80%"/>
+<img src="https://github.com/grigricar/SQL_dashboard_baseball_project/blob/main/images_screenshots/%231%20reflection_image.png" height="90%" width="90%"/>
   <br />
   <b>Loving those CTEs</b>
 </p>
@@ -93,7 +93,7 @@ Many small ‘tricks’ were covered in the course. Including handy functions. O
 
 One of the more complex queries involved finding the team for which a player debut and then ended their career. This involved joint between multiple tables. I ended up joining to of the tables I created in my CTEs to bring all the information together. (I could have avoided one CTE, bu doing a subquery join for start_team and end_team). 
 <p align = "center"> 
-<img src="https://github.com/grigricar/SQL_dashboard_baseball_project/blob/main/images_screenshots/%232%20refelection_image.png" height="80%" width="80%"/>
+<img src="https://github.com/grigricar/SQL_dashboard_baseball_project/blob/main/images_screenshots/%232%20refelection_image.png" height="90%" width="90%"/>
 </p>
 
 I was also happy with my approach to finding the shared birthdays of all players (the question at hand was actually misleading here it should have read ‘brith date’), but my finding was more interesting: it turns out that with 18589 players, every birthday is shared by multiple players. The most birthdays shared are on 18 of November, where 75 players share a birthday!
