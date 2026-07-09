@@ -42,9 +42,30 @@ As usual the project morphed into something bigger than initially expected, wher
 
 
 <h2>Key Findings and Analysis</h2>
+<a href="https://datastudio.google.com/reporting/3f91010e-93d3-42f2-8d5d-f9aec0d34822">PROJECT DASHBOARD CAN BE FOUND HERE</a>
+<p> The database composed of four tables, with the ’salaries’ table extending to 24,758 rows, and the ‘players’ table consisting of 24 columns. The data spanned information from 1860 to 2014. There was much data to wrangle with.
 
-<p> Laid out in the Jupyter Notebook.
+Key finding for the project consisted of:
 
+- Finding that in 1860s only two universities produced players; this peaked in 1990 where 493 universities produced players.
+
+- Across the time period I found the top five player producing schools with The University of Austin Texas producing the most with 107 players.
+
+- I found the top 20% of teams who have the highest annual avg. spend on combined team salaries. Oaklands has the highest at $39.5 mil . (This measure heavily biases teams that only began competing later as this raises their average.)
+
+- Considering the cumulative spending of teams over years, I found that the earliest year that cumulative spending went over one billion dollars was 1993, for Oaklands and Kansas City Royals.
+
+- The oldest career length went to “Nicholas” who played for 35 years. (This was probably a very early player, before the Major Leagues)
+
+- One of the most complex queries was finding that only 19 players with a career length > 10 years started and ended on the same team. 
+
+- I found which players share the same birthday (given the numbers there are hundreds for each day of the year)
+
+- I found the percentage of left, right and both side batters for each team. 
+
+- The change in average weight and height for players across the time period. Both increase, but weight increase more particularly from the 1980s. 
+
+</p>
 
 </br>
 
