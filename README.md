@@ -83,13 +83,18 @@ I thought I had mastered GROUP BY, but ran into a few hurdles that are now resol
 
 I cannot get enough of CTEs and WINDOW functions, and I enjoyed the logic I used to find the first year that a team’s cumulative spending supposed 1 billion dollars. In reflection and comparison to the SOLUTION, I can avoid too many CTEs by using some double-subjoins in future. This can become less clear to follow, however. 
 
-*Insert*
+<p align = "center"> 
+<img src="https://github.com/grigricar/SQL_dashboard_baseball_project/blob/main/images_screenshots/%231%20reflection_image.png" height="80%"  width="80%"/>
+  <br />
+  <b>Loving those CTEs</b>
+</p>
 
 Many small ‘tricks’ were covered in the course. Including handy functions. One I learnt about in the project was using the TIMESTAMPDIFF() function as apposed to a simple DATEDIFF() to specify the required output type. However, I got around this with a conversion relating that DATEDIFF() would take into account leap years. When using a window function I also became aware that PARTITION BY is not required in cases where the column already contains unique values, but a handy ranking can then be easily produced. 
 
 One of the more complex queries involved finding the team for which a player debut and then ended their career. This involved joint between multiple tables. I ended up joining to of the tables I created in my CTEs to bring all the information together. (I could have avoided one CTE, bu doing a subquery join for start_team and end_team). 
-
-*Insert*
+<p align = "center"> 
+<img src="https://github.com/grigricar/SQL_dashboard_baseball_project/blob/main/images_screenshots/%232%20refelection_image.png" height="80%" width="80%"/>
+</p>
 
 I was also happy with my approach to finding the shared birthdays of all players (the question at hand was actually misleading here it should have read ‘brith date’), but my finding was more interesting: it turns out that with 18589 players, every birthday is shared by multiple players. The most birthdays shared are on 18 of November, where 75 players share a birthday!
 
@@ -98,8 +103,9 @@ I was also happy with my approach to finding the shared birthdays of all players
 Leaving the project at SQL querying alone felt incomplete. So in an attempt to visualise some of the findings I looked for a quick and easy way of setting up an accessible dashboard. I took the chance to investigate how well this can be done in Datastudio, mainly because I did not need a platform to help me aggregate and explore the data. Having played with Tableau before, I may have made the wrong choice. In terms of storytelling and presentation Tableau has far more advantages. 
 
 In the end I was able to layer in some interactivity into the findings, but Datastudio is laggy, and some of the changes I required to the charts, like setting a specific interactive dropdown to work on only one visual, were not very intuitive and often required strange workarounds. Nevertheless, the objective of connecting to findings was achieved. I did find myself being pulled back to SQL, frequently, to respond to new questions and to tweak outputs. My biggest extensions to the original project include finding the average yearly spend per team, as well as the top 3 highest paid players for every decade.
-
-*insert blue slide*
+<p align = "center"> 
+<img src="https://github.com/grigricar/SQL_dashboard_baseball_project/blob/main/images_screenshots/%233%20dashboard.png" height="80%" width="80%"/>
+</p>
 
 In many cases, I went back to SQL to handle conversions (from weight in pounds to kg; and from inches to meters) or, in the case of the piechart, to transpose the data into long format.
 
