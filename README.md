@@ -70,14 +70,42 @@ Key finding for the project consisted of:
 </br>
 
 <h2>Reflection and Questions</h2>
-<p>Numerous challenges were overcome. The first one being the transformation of the datafiles which were adapted for .sav. Using pandas to adjust the format into the required for the pandas data frame format was not always straight forward. For one dataset LLM prompting had to be manipulated twice to achieve suitable Regex code when basic string manipulation was no sufficient. This was all done in a separate python file, and the new cleaned files saved to be read into the main file. 
 
-The second crucial learning curve, was adjusting to the indexing and frequency process required for times series. This part of the workflow was essential, and was often overlooked in the easily accessed formatted uni files. I found thinking about the frequency to be helpful in better understanding the data sets, in terms of scale and detail required and seasonality patterns this is where decisions concerning timeseries modelling begin. 
+Reflection and questions:
 
-I was already familiar with the statistical concepts involved but there were quirks and intricacies learnt about how to best apply the techniques with the python libraries. For instance, in the case of applying and comparing the effect of differencing to achieve stationarity in the wheat data set using the .diff() method, I assumed wrongly that specifying a number would increase the number of times a sequence is differences. This, in fact, just shifted the indexing of which two numbers were differenced. To attain an order of 2 differencing the differenced series had to be differenced again using: .diff().diff()  . I was also familiar with many of the summary outputs and measures but had to adjust to how they were expressed: eg error variance is sigma2. Overall the information provided for the models was more in depth than SPSS and it was helpful to find ACI values for the model in addition to other useful model measures and indicators. Most pleasing were the many methods available to directly extract model outputs and specific measures: e.g .fittedvalues or .plot_diagnostics() or .resid(). These options to my mind are what give using python for analysis much more flexibility and control than a poin-and-click programme like SPSS. 
+1. SQL QUERYING
 
-Such flexibility in approach also mean I had far more options in the control over the plotting and visualization of the analysis. Understanding how layers like fig, ax can be applied to control almost every aspect of complex plots was the most challenging concept to grasp. However, when the intricacies of labeling, axis placement, colour and font can be manipulated, it was easy to see how you can be carried away by the aesthetics. Plotting confidence intervals and choosing a colour to match the predication line was as artful as I got here. Almost any plot imaginable could be created. 
+SQL is more versatile than I originally expected. As a tool used to draw insights and mange big relational databases it is essential. Through the course of the project I began to reflexively think and code in SQL script, which helped me to attain my goal of absorbing the SQL logic. While querying itself may become a dying art with LLMs, knowledge of the logic is essential. 
 
+Some of the hurdles I had to navigate had more to do with thinking about the data than SQL itself. For example, to GROUP by decade I initially just removed the final digit in the date using ROUND, but then realised that many years in the decade would be incorrectly rounded up. FLOOR was the better move. For the sake of clarity multiplying by 10 afterwards produced a cleaner figure (1970 vs 197) for the decade.
+
+I thought I had mastered GROUP BY, but ran into a few hurdles that are now resolved. It is now clear that the aggregation is calculated over the category/period that you ‘collapse’ when using GROUP BY, particularly when more than one category (ie: ’teamID’ and ‘yearID’.)
+
+I cannot get enough of CTEs and WINDOW functions, and I enjoyed the logic I used to find the first year that a team’s cumulative spending supposed 1 billion dollars. In reflection and comparison to the SOLUTION, I can avoid too many CTEs by using some double-subjoins in future. This can become less clear to follow, however. 
+
+*Insert*
+
+Many small ‘tricks’ were covered in the course. Including handy functions. One I learnt about in the project was using the TIMESTAMPDIFF() function as apposed to a simple DATEDIFF() to specify the required output type. However, I got around this with a conversion relating that DATEDIFF() would take into account leap years. When using a window function I also became aware that PARTITION BY is not required in cases where the column already contains unique values, but a handy ranking can then be easily produced. 
+
+One of the more complex queries involved finding the team for which a player debut and then ended their career. This involved joint between multiple tables. I ended up joining to of the tables I created in my CTEs to bring all the information together. (I could have avoided one CTE, bu doing a subquery join for start_team and end_team). 
+
+*Insert*
+
+I was also happy with my approach to finding the shared birthdays of all players (the question at hand was actually misleading here it should have read ‘brith date’), but my finding was more interesting: it turns out that with 18589 players, every birthday is shared by multiple players. The most birthdays shared are on 18 of November, where 75 players share a birthday!
+
+ 2. DASHBOARD With Datastudio 
+
+Leaving the project at SQL querying alone felt incomplete. So in an attempt to visualise some of the findings I looked for a quick and easy way of setting up an accessible dashboard. I took the chance to investigate how well this can be done in Datastudio, mainly because I did not need a platform to help me aggregate and explore the data. Having played with Tableau before, I may have made the wrong choice. In terms of storytelling and presentation Tableau has far more advantages. 
+
+In the end I was able to layer in some interactivity into the findings, but Datastudio is laggy, and some of the changes I required to the charts, like setting a specific interactive dropdown to work on only one visual, were not very intuitive and often required strange workarounds. Nevertheless, the objective of connecting to findings was achieved. I did find myself being pulled back to SQL, frequently, to respond to new questions and to tweak outputs. My biggest extensions to the original project include finding the average yearly spend per team, as well as the top 3 highest paid players for every decade.
+
+*insert blue slide*
+
+In many cases, I went back to SQL to handle conversions (from weight in pounds to kg; and from inches to meters) or, in the case of the piechart, to transpose the data into long format.
+
+I also began to pick up issues/irregularities with the data that were not important to the original basic project. The data goes up to 2014 but for some two teams only one players data was captured in that year (the highest paid) completed skewing that team’s average total pay.  I deleted the rows for those entries (more data gathering could have filled in the gaps; or imputation could have been explored based on the previous year’s averages). Many teams had missing data for certain years and 2014 proved to be problematic for more than one team and should perhaps have been removed. The result is that gaps can be seen in the line graph for certain teams for their average salary pay in certain years.
+
+The intricacy and importance of detail, and the options that arose when there were gaps, exposed for me the critical decision making required when engineering the data from source. 
 
 </p>
 
