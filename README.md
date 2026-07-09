@@ -14,9 +14,9 @@ I had encountered bits of SQL in database theory and some short courses, but I f
 
 The course was fast-paced with plenty of practical problem exposure which is just what I required to fully grasp those sneaky GROUP BY interactions with categorical and numerical observations. CTEs are now my go-to, WINDOW functions are second nature and the logic of aggregation and pivoting are mine. 
 
-So the origin point of this project was, indeed, the final course project of the course. I completed every section without AI or regular glimpse-at-solution assistance. Comparing my answers I had arrived at the correct solutions, but often through different means. SQL is more of a flexible language than I originally expected. 
+So the origin point of this project was, indeed, the final course project of the course. I completed every section without AI or regular glimpse-at-solution assistance. Comparing my answers to solutions I was happy to find I was correct in my querying, but often through different combinations of code. SQL is more of a flexible language than I originally expected. 
 
-I then extended this initial foundation into a full-blown dashboard project. Before I knew it I had to go back to SQL to develop some of my own queries in answer to some of my new questions. I used Google’s Datastudio (formally “Looker”) as an easy introduction to dashboarding. Switching back and forth between mySQL and Datastudio, I learnt much about the important of the initial stage of data structuring, cleaning and organising  and how essential this is to unlocking insights from a large dataset and then communicating findings. 
+I then extended this initial foundation into a full-blown dashboard project. Before I knew it I had to go back to SQL to develop some of my own queries in answer to some of my new questions. I used Google’s Datastudio as an easy introduction to dashboarding. Switching back and forth between mySQL and Datastudio, I learnt much about the important of the initial stage of data structuring, cleaning and organising  and how essential this is to unlocking insights from a large dataset and then communicating findings. 
 
 As usual the project morphed into something bigger than initially expected, where the difficulty lay in placing practical limits on the scope of the project. Next time I will get stuck into a dataset I really care about.    
 </p>
