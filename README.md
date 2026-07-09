@@ -1,4 +1,4 @@
-<h1>SQL Foundational Major League Baseball Project</h1>
+<h1>SQL Consolidation: Major League Baseball Project</h1>
 
 <a href="https://datastudio.google.com/reporting/3f91010e-93d3-42f2-8d5d-f9aec0d34822">CLICK TO INTERACT WITH THE FULL PROJECT DASHBOARD</a>
 
