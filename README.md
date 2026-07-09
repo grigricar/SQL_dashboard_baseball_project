@@ -73,7 +73,7 @@ Key finding for the project consisted of:
 
 Reflection and questions:
 
-1. SQL QUERYING
+<b>1. SQL QUERYING </b>
 
 SQL is more versatile than I originally expected. As a tool used to draw insights and mange big relational databases it is essential. Through the course of the project I began to reflexively think and code in SQL script, which helped me to attain my goal of absorbing the SQL logic. While querying itself may become a dying art with LLMs, knowledge of the logic is essential. 
 
@@ -93,7 +93,7 @@ One of the more complex queries involved finding the team for which a player deb
 
 I was also happy with my approach to finding the shared birthdays of all players (the question at hand was actually misleading here it should have read ‘brith date’), but my finding was more interesting: it turns out that with 18589 players, every birthday is shared by multiple players. The most birthdays shared are on 18 of November, where 75 players share a birthday!
 
- 2. DASHBOARD With Datastudio 
+ <b>2. DASHBOARD With Datastudio</b> 
 
 Leaving the project at SQL querying alone felt incomplete. So in an attempt to visualise some of the findings I looked for a quick and easy way of setting up an accessible dashboard. I took the chance to investigate how well this can be done in Datastudio, mainly because I did not need a platform to help me aggregate and explore the data. Having played with Tableau before, I may have made the wrong choice. In terms of storytelling and presentation Tableau has far more advantages. 
 
@@ -111,11 +111,12 @@ The intricacy and importance of detail, and the options that arose when there we
 
 </br>
 
--  <b>The next obvious step is to add interactivity to some of the plots, for instance a user defined time-scale </b>
--  <b>I used many foundational checks but there must be more efficient methods to create a PACF</b>
--  <b>I would like to explore splitting the data set to use part of it for testing and model validation.   </b>
-- <b> Exploring the effect of removing influential points and comparing the models, is a natural extension  </b>
-- <b> I need to begin expanding my knowledge to different times series with varying frequencies, seasonal requirements, multiplicative and mixed models </b> 
+-  <b>Next time around I want to explore the greater freedom of a platform like Tableau or go into a fully coded dashboard using Streamlit.</b>
+-  <b>The nature of the project was a bit scattered. Next time I want to approach a dashboard with more of a focused objective to create a narrative around big insights. </b>
+-  <b>Aesthetics and colour code were woefully wanting in this project, but this was not the focus here.</b>
+- <b> I want to apply SQL to bigger datasets in other and more diverse interests to me. So much can be discovered and answered with just a bit of exploration</b>
+- <b> How would I begin to approach a ‘moving’, dynamic dashboard display, where the data updates on a daily or hourly basis? </b> 
+
 
   
 
