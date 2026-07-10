@@ -118,7 +118,7 @@ The intricacy and importance of detail, and the options that arose when there we
 </br>
 
 -  <b>Next time around I want to explore the greater freedom of a platform like Tableau or go into a fully coded dashboard using Streamlit.</b>
--  <b>While exploring with SQL, potential MLR model ideas kept popping up (using player weigth or height as a response), and the exploration already begins to set up what some of the key explanatory variables may be (in this case there is a clear linear connection to time). In future, I must develop more of these models to arrive at even more fine-grained insights. </b>
+-  <b>While exploring with SQL, potential MLR model ideas kept popping up (using player weight or height as a response), and the exploration already begins to set up what some of the key explanatory variables may be (in this case there is a clear linear connection to time). In future, I must develop more of these models to arrive at even more fine-grained insights. </b>
 -  <b>The nature of the project was a bit scattered. Next time I want to approach a dashboard with more of a focused objective to create a narrative around big insights. </b>
 -  <b>Aesthetics and colour code were woefully wanting in this project, but this was not the focus here.</b>
 - <b> I want to apply SQL to bigger datasets in other and more diverse interests to me. So much can be discovered and answered with just a bit of exploration</b>
